@@ -1,0 +1,15 @@
+input{
+
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+table,td,th
+{
+    border: 1px solid blueviolet;
+}
+
+td,th
+{
+    padding: 10px;
+}

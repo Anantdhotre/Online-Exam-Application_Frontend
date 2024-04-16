@@ -1,0 +1,50 @@
+<input name="username" [(ngModel)]="user.username" placeholder="Enter Username">
+
+<input name="password" [(ngModel)]="user.password" placeholder="Enter Password">
+
+<input name="mobno" [(ngModel)]="user.mobno" placeholder="Enter Mobno">
+
+<input name="emailid" [(ngModel)]="user.emailid" placeholder="Enter Email"><br><br>
+
+<input type="button" value="saveUser" (click)="saveUser()">
+
+<input  type="button" value="updateUser" (click)="updateUser()">
+
+<input  type="button" value="getAllUsers" (click)="getAllUsers()">
+
+<input  type="button" value="deleteUser" (click)="deleteUser()">
+
+
+
+{{message}}<br><br>
+
+<table>
+
+
+<tr>
+
+    <th>username</th>
+    
+    <th>password</th>
+    
+    <th>mobno</th>
+    
+    <th>emailid</th>
+    
+
+</tr>
+
+<tr *ngFor="let user of users">
+
+    <td>{{user.username}}</td>
+
+    <td>{{user.password}}</td>
+
+    <td>{{user.mobno}}</td>
+
+    <td>{{user.emailid}}</td>
+
+</tr>
+
+</table>
+

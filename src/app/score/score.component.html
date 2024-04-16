@@ -1,0 +1,30 @@
+<span style="color: red;font-size: 30px;">your score is {{score}}</span>
+
+<table>
+
+
+    <tr>
+    
+        <th>qno</th>
+        
+        <th>question</th>
+        
+        <th>submittedAnswer</th>
+        
+        <th>OriginalAnswer</th>
+    
+    </tr>
+    
+    <tr *ngFor="let answer of allanswers">
+    
+        <td>{{answer.qno}}</td>
+    
+        <td>{{answer.qtext}}</td>
+    
+        <td>{{answer.submittedAnswer}}</td>
+    
+        <td>{{answer.originalAnswer}}</td>
+    
+    </tr>
+    
+    </table>
